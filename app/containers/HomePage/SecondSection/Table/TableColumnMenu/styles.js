@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   position: relative;
-  width: 15px;
+  width: 25px;
   height: 33px;
   color: #000;
   white-space: normal;
@@ -55,7 +55,7 @@ export const ColumnName = styled.span`
   padding-left: 5px;
   ${({ isChecked }) =>
     isChecked && {
-      color: '#0b7e3d',
+      color: '#24265D',
     }}};
 `;
 
@@ -76,9 +76,10 @@ export const ResetLink = styled.div`
 
 // Svg
 export const MenuIcon = styled.svg`
-  width: 18px;
-  height: 35px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
+  color: red;
 
   & :hover path {
     fill: red;

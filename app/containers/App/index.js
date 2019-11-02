@@ -53,9 +53,6 @@ export default class App extends PureComponent {
             }}
           >
             <Wrapper
-              style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(${require(`./bg_images/${actualBackgroundNumber}.jpg`)})`,
-              }}
               bgNum={actualBackgroundNumber}
             >
               <Switch>

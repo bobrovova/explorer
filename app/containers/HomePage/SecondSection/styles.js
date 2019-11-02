@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const SectionTwo = styled.section`
+  margin-top: 40px;
   width: 68vw;
   display: flex;
   flex-direction: column;
+  max-width: 1280px;
 
   @media (max-width: 1920px) {
     width: 60vw;
@@ -22,7 +24,7 @@ export const Intumentary = styled.div`
   width: 100%;
   padding-bottom: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
 
@@ -38,15 +40,16 @@ export const Intumentary = styled.div`
 `;
 
 export const ButtonVote = styled.button`
-  background-color: #28a745;
+  background-color: #3366FF;
   color: #fff;
-  border-radius: 2px;
-  width: 245px;
-  height: 30px;
+  border-radius: 6px;
+  height: 40px;
+  padding: 0 20px;
   outline: none;
   box-shadow: 0px 2px 5px 0.3px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
   &:hover {
-    background-color: #218838;
+    background-color: #1550FF;
   }
 
   &:active {

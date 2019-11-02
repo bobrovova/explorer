@@ -83,11 +83,6 @@ export default class TableColumnMenu extends Component {
             <Container position={position}>
               <Cross onClick={this.handleToggleTableMenu} />
               <HeadText>{t('i18nSecondSection.i18nTableColumnMenu.title')}</HeadText>
-              <HintText>
-                {t('i18nSecondSection.i18nTableColumnMenu.hintText.0')}:{' '}
-                <Bold>{t('i18nSecondSection.i18nTableColumnMenu.hintText.1')}</Bold>{' '}
-                {t('i18nSecondSection.i18nTableColumnMenu.hintText.2')}
-              </HintText>
               {Object.entries(
                 resources[store.get('eosMonitor_currentLanguage') || languages[1] || 'en'].translations
                   .i18nSecondSection.i18nTableColumnNames

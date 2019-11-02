@@ -66,8 +66,6 @@ export default class FirstSection extends PureComponent {
       <SectionOne>
         <CurrentBlockInfo lastBlockStats={lastBlockStats} />
         <GeneralInfo toggleModal={toggleModal} headBlockNum={lastBlockStats.head_block_num} />
-        <EosPrice />
-        {filteredBps.length ? <UnregisteredBps unregisteredBps={filteredBps} /> : null}
         <Transactions
           transactionsList={transactionsList}
           transactionsInfo={transactionsInfo}

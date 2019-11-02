@@ -42,6 +42,8 @@ export const ModalContainer = styled.section`
   margin: 1.75rem auto;
   background-color: white;
   animation: ${modalAppear} 0.5s;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 
   @media (max-width: 500px) {
     margin: 0px;
@@ -52,7 +54,7 @@ export const ModalContainer = styled.section`
 export const Cross = styled.div`
   position: absolute;
   right: 13px;
-  top: 0px;
+  top: 17px;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
@@ -141,7 +143,12 @@ export const HeadBox = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #28a745;
+  background-color: #24265D;
+  background-color: #24265D;
+  font-weight: 700;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 15px;
 `;
 
 export const HeadText = styled.span`

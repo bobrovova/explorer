@@ -54,7 +54,7 @@ export default class HomePage extends PureComponent {
 
     return (
       <Fragment>
-        <Notifications />
+        
         {modal && modal.type && <Modal toggleModal={toggleModal} modal={modal} />}
         <NavigationMenu toggleModal={toggleModal} />
         <MainContainer>

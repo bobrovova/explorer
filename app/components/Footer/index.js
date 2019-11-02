@@ -16,23 +16,8 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <FooterSpan>
-          <Link to={path}>
-            <Lion src={lion} alt="Lion" />
-          </Link>
-          2018 {t('footer.createdBy')}{' '}
-          <RegularLink href="https://cryptolions.io" target="__blank">
-            {t('footer.cryptoLions')}
-          </RegularLink>{' '}
-          (
-          <RegularLink href="https://github.com/CryptoLions/EOS-Testnet-monitor" target="__blank">
-            {t('footer.gitHub')}
-          </RegularLink>{' '}
-          v2.0-d
-          {process.env.VERSION_NUMBER})
+          Copyright © 2019 Created by Method Inc.
         </FooterSpan>
-        <div>
-          <StyledLink to={mapPath}>{mapPath === '/map' ? t('footer.map') : t('footer.table')}</StyledLink>
-        </div>
       </FooterWrapper>
     );
   }

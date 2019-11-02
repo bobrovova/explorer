@@ -8,9 +8,10 @@ export const Container = styled.div`
   display: inherit;
   flex-direction: column;
   align-items: center;
-  width: 75vw;
+  width: 100vw;
   padding: 20px 0;
   position: relative;
+  background-color: #fff;
 
   @media (max-width: 992px) {
     width: 85vw;
@@ -22,8 +23,8 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
-  display: flex;
-  align-items: center;
+  max-width: 1280px;
+  width: 100%;
 `;
 
 export const NavMenuButton = styled.svg`
@@ -81,7 +82,7 @@ export const LanguageSwitcher = styled.span`
 `;
 
 export const LogoImage = styled.img`
-  width: 65px;
+  width: 99px;
   margin-right: 13px;
   // cursor: pointer;
 
@@ -115,10 +116,13 @@ export const BlurBG = styled.div`
 `;
 
 export const NavMenu = styled.section`
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 15px;
+  max-width: 1280px;
+  width: 100%;
 
   @media (max-width: 768px) {
     display: ${({ isNavMenuActive }) => (isNavMenuActive ? 'flex' : 'none')};
@@ -140,7 +144,8 @@ export const NavMenu = styled.section`
 
 export const BlueLink = link.extend`
   cursor: pointer;
-  color: #007bff;
+  color: #8F9BB3;
+  font-size: 15px;
 
   &:hover {
     text-decoration: underline;

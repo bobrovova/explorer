@@ -51,10 +51,6 @@ export default class SecondSection extends PureComponent {
     } = this.props;
     return (
       <SectionTwo>
-        <Intumentary>
-          <ButtonVote onClick={this.showVoteModal}>{t('i18nSecondSection.i18nVote')}</ButtonVote>
-          <FilterInput filterInputValue={filterInputValue} setFilterInputValue={setFilterInputValue} />
-        </Intumentary>
         <Table />
       </SectionTwo>
     );

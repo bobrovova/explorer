@@ -4,8 +4,6 @@ export const TableContainer = styled.div`
   overflow-x: auto;
   width: 100%;
   min-height: 75vh;
-  transform: rotateX(180deg);
-  padding-top: 100vh;
 
   & ::-webkit-scrollbar {
     height: 10px;
@@ -35,12 +33,11 @@ export const TableContainer = styled.div`
   }
 `;
 
-export const TableTag = styled.table`
-  transform: rotateX(180deg);
+export const TableTag = styled.div`
   width: 100%;
 `;
 
-export const TableBody = styled.tbody``;
+export const TableBody = styled.div``;
 
 export const Filler = styled.tr`
   height: 10px;
@@ -56,12 +53,12 @@ export const StyledCheckbox = styled.span`
   position: relative;
   width: 17px;
   height: 17px;
-  border: 2px solid #0b7e3d;
+  border: 2px solid #24265D;
   cursor: pointer;
 `;
 
 export const StyledCheckboxActive = StyledCheckbox.extend`
-  background-color: #0b7e3d;
+  background-color: #24265D;
 
   &:after {
     position: absolute;

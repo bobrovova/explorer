@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const SectionOne = styled.div`
-  width: 260px;
+  width: 290px;
   padding-top: 40px;
   margin-right: 30px;
   display: inherit;
@@ -37,18 +37,21 @@ export const Wrapper = styled.section`
 export const Header = styled.div`
   position: relative;
   width: 100%;
-  height: 35px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(178, 216, 155, 1);
+  justify-content: flex-start;
+  background-color: #24265D;
+  padding: 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 `;
 
 export const HeaderSpan = styled.span`
   display: block;
   font-size: 14px;
-  font-weight: 500;
-  color: #747474;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
 `;
 
 export const Container = styled.div`
@@ -56,15 +59,18 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const TextSpan = styled.span`
-  display: block;
+export const TextSpan = styled.div`
+  display: flex;
   font-size: 14px;
+  color: rgba(24, 32, 78, 0.3);
+  padding: 15px 0;
+  border-bottom: 1px solid #F6F6F6;
+  justify-content: space-between;
 `;
 
 export const GreenSpan = styled.span`
-  color: rgba(0, 128, 0, 0.7);
-  font-size: 15px;
-  font-weight: bold;
+  color: #18204E;
+  font-size: 14px;
 `;
 
 // Svg icons

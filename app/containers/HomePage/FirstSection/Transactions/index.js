@@ -51,28 +51,18 @@ class Transactions extends PureComponent {
             <Fragment>
               <HeadDiv>
                 <TextSpan>
-                  {t('i18nFirstSection.i18nTransactions.total')}:{' '}
+                  {t('i18nFirstSection.i18nTransactions.total')}{' '}
                   <GreenSpan>{transactionsInfo.totalTransactionsCount}</GreenSpan>{' '}
                   {t('i18nFirstSection.i18nTransactions.transactions')}
                 </TextSpan>
                 <TextSpan>
-                  in <GreenSpan>{transactionsInfo.notEmptyBlocksCount}</GreenSpan> blocks
+                  в <GreenSpan>{transactionsInfo.notEmptyBlocksCount}</GreenSpan> блоках
                 </TextSpan>
                 <TextSpan>
                   {t('i18nFirstSection.i18nTransactions.blockNumber')}:{' '}
                   <GreenSpan>{transactionsInfo.totalBlockCount}</GreenSpan>
                 </TextSpan>
               </HeadDiv>
-              <OverflowContainer>
-                {transactionsList.slice(0, 10).map((transaction, i) => (
-                  <TransactionRow
-                    transaction={transaction}
-                    key={transaction.txid}
-                    iteration={i}
-                    toggleModal={toggleModal}
-                  />
-                ))}
-              </OverflowContainer>
             </Fragment>
           ) : (
             <SvgSpinner />

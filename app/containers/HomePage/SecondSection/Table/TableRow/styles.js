@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 import Flag from 'react-world-flags';
 
-export const Trow = styled.tr`
-  padding: 0px 5px;
+export const Trow = styled.div`
   border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+  display: flex;
+  padding-right: 30px;
 `;
 
-export const Cell = styled.td`
+export const Cell = styled.div`
   padding: 7px 0px;
   font-size: 12px;
   color: #3b3e43;
   text-align: center;
+  flex: 1;
+  height: 60px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Tdata = Cell.extend`
@@ -51,8 +58,6 @@ export const OrgNameCell = Cell.extend`
 `;
 
 export const NameCell = Cell.extend`
-  width: 290px;
-  min-width: 290px;
   position: sticky;
   left: 0;
   top: 0;

@@ -7,8 +7,10 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   width: 100%;
   height: 6vh;
-  background-color: #000;
+  background-color: #fff;
   padding: 12px 0;
+  height: 128px;
+  margin-top: 30px;
 
   @media (max-width: 768px) {
     padding: 5px 0;
@@ -29,7 +31,7 @@ export const StyledLink = styled(Link)`
 
 export const FooterSpan = styled.span`
   text-align: center;
-  color: #fff;
+  color: #18204E;
 `;
 
 export const RegularLink = styled.a`

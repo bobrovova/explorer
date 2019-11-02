@@ -24,7 +24,7 @@ import {
 
 // Images
 import logoGif from '../../../assets/images/small_t.gif';
-import logo from '../../../assets/images/logo_main.png';
+import logo from '../../../assets/images/logo.svg';
 
 @translate()
 export default class NavigationMenu extends PureComponent {
@@ -70,55 +70,34 @@ export default class NavigationMenu extends PureComponent {
       <Container>
         <Header>
           <SvgMenuButton toggleNavMenuHandler={this.toggleNavMenuHandler} />
-          {isLogoActive ? (
-            <LogoImage src={logoGif} alt="Logo" onMouseLeave={this.toggleLogoHandler} style={{ width: '65px' }} />
-          ) : (
-            <LogoImage src={logo} alt="Logo" onMouseOver={this.toggleLogoHandler} onFocus={this.toggleLogoHandler} />
-          )}
-          <Headlink href="http://eosnetworkmonitor.io/">{t('i18nNavigationMenu.headLink')}</Headlink>
+          <LogoImage src={logo} alt="Logo" />
         </Header>
-        <SwitcherWrapper isNavMenuActive={isNavMenuActive}>
-          <LanguageSwitcher onClick={this.changeLanguage('en-US', 'en')}>En</LanguageSwitcher>
-          <LanguageSwitcher onClick={this.changeLanguage('ru-RU', 'ru')}>Ru</LanguageSwitcher>
-          <LanguageSwitcher onClick={this.changeLanguage('zh-CN', 'zh')}>Cn</LanguageSwitcher>
-        </SwitcherWrapper>
         {isNavMenuActive && <BlurBG onClick={this.toggleNavMenuHandler} />}
         <NavMenu isNavMenuActive={isNavMenuActive}>
           <BlueLink onClick={this.toggleModalHandler('accountInfo', null)}>
             {t('i18nNavigationMenu.accountInfo')}
           </BlueLink>
-          <Border />
           <BlueLink onClick={this.toggleModalHandler('accountHistory', null)}>
             {t('i18nNavigationMenu.accountHistory')}
           </BlueLink>
-          <Border />
-          <BlueLink onClick={this.toggleModalHandler('transactions', null)}>{t('i18nNavigationMenu.txInfo')}</BlueLink>
-          <Border />
-          <BlueLink onClick={this.toggleModalHandler('blockInfo', 1)}>{t('i18nNavigationMenu.blockInfo')}</BlueLink>
-          <Border />
+          <BlueLink onClick={this.toggleModalHandler('transactions', null)}>Поиск по транзакции</BlueLink>
+          <BlueLink onClick={this.toggleModalHandler('blockInfo', 1)}>Поиск по номеру блока</BlueLink>
           <BlueLink onClick={this.toggleModalHandler('api', 1)}>{t('i18nNavigationMenu.api')}</BlueLink>
-          <Border />
-          <BlueLink onClick={this.toggleModalHandler('p2p', null)}>{t('i18nNavigationMenu.p2p')}</BlueLink>
-          <Border />
-          <BlueLink onClick={this.toggleModalHandler('ramChart', null)}>{t('i18nNavigationMenu.ramChart')}</BlueLink>
-          <Border />
           <BlueLink onClick={this.toggleModalHandler('liveTpsChart', null)}>
             {t('i18nNavigationMenu.liveTpsChart')}
           </BlueLink>
-          <Border />
-          <BlueLink href="https://monitor.jungletestnet.io" target="__blank">
-            {t('i18nNavigationMenu.testnet')} <ExternalLink />
+          <BlueLink href="#" target="__blank">
+            Testnet
           </BlueLink>
-          <Border />
-          <BlueLink href="https://github.com/CryptoLions/EOS-MainNet" target="__blank">
-            {t('i18nNavigationMenu.nodeInstallation')} <ExternalLink />
+          <BlueLink href="#" target="__blank">
+            Инструкции
           </BlueLink>
-          <Border />
-          <BlueLink href="https://bloks.io" target="__blank">
-            Explorer <ExternalLink />
+          <BlueLink href="#" target="__blank">
+            Explorer
           </BlueLink>
-          <Border />
-          <BlueLink onClick={this.toggleModalHandler('legend', null)}>{t('i18nNavigationMenu.legend')}</BlueLink>
+          <BlueLink href="http://185.87.51.136/" target="__blank">
+            Method Web Wallet
+          </BlueLink>
         </NavMenu>
       </Container>
     );

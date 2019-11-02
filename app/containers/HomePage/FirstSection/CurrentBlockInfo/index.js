@@ -27,28 +27,21 @@ export default class CurrentBlockInfo extends PureComponent {
         <Container>
           {lastBlockStats.head_block_num ? (
             <Fragment>
-              <HeadGreenSpan>{formatNumber(lastBlockStats.head_block_num)}</HeadGreenSpan>
-              <TimeGreenSpan>
-                {lastBlockStats.head_block_time && convertUtcToLocal(lastBlockStats.head_block_time)}
-              </TimeGreenSpan>
               <TextSpan>
-                {t('i18nFirstSection.i18nCurrentBlockInfo.irreversibleBlock')}:{' '}
+                {t('i18nFirstSection.i18nCurrentBlockInfo.irreversibleBlock')}
                 <GreenSpan>{formatNumber(lastBlockStats.last_irreversible_block_num)}</GreenSpan>
                 <DifferenceSpan>
-                  {' '}
                   [{formatNumber(lastBlockStats.last_irreversible_block_num - lastBlockStats.head_block_num)}]
                 </DifferenceSpan>
               </TextSpan>
-
-              <FooterContainer>
-                <TextSpan>
-                  {t('i18nFirstSection.i18nCurrentBlockInfo.producedBy')}:{' '}
-                  <PurpleSpan>{lastBlockStats.head_block_producer}</PurpleSpan>
-                </TextSpan>
-                <div>
-                  {t('i18nFirstSection.i18nCurrentBlockInfo.next')}: <GraySpan>{lastBlockStats.next_producer}</GraySpan>
-                </div>
-              </FooterContainer>
+              <TextSpan>
+                {t('i18nFirstSection.i18nCurrentBlockInfo.producedBy')}
+                <GreenSpan>{lastBlockStats.head_block_producer}</GreenSpan>
+              </TextSpan>
+              <TextSpan>
+              {t('i18nFirstSection.i18nCurrentBlockInfo.next')}
+                <GreenSpan>{lastBlockStats.next_producer}</GreenSpan>
+              </TextSpan>
             </Fragment>
           ) : (
             <SvgSpinner />

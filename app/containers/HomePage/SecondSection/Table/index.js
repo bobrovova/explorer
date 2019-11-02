@@ -155,7 +155,7 @@ class Table extends PureComponent {
             <TableHeading tableColumnState={tableColumnState} />
             <TableBody>
               {filteredProducers.length !== 0 &&
-                filteredProducers.map((producer, index) => (
+                filteredProducers.slice(0, 21).map((producer, index) => (
                   <Fragment key={producer.name}>
                     {index === 21 && !filterInputValue && <Filler />}
                     <TableRow

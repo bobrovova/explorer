@@ -230,12 +230,12 @@ export default class TableRow extends PureComponent {
       workingEndpointsNumber && producer.endpoints.length / 2 <= producer.endpoints.length - workingEndpointsNumber;
 
     let backgroundColor = 'rgba(255, 255, 255, 0.7)';
-    if (producer.isCurrentNode) backgroundColor = 'rgba(17, 168, 39, 0.7)';
+    /*if (producer.isCurrentNode) backgroundColor = 'rgba(17, 168, 39, 0.7)';
     if ((!producer.isNode && index < 61) || reregistered) backgroundColor = 'rgb(211, 211, 211)';
     if (mostEndpointsAreDown) backgroundColor = 'rgba(255, 255, 155, 0.7)';
     if (producer.isUnsynced) backgroundColor = 'rgb(159, 100, 227)';
     if (producer.responseIsBad) backgroundColor = 'rgba(238, 118, 0, 0.7)';
-    if (producer.missedProducing) backgroundColor = 'rgba(255, 4, 4, 0.7)';
+    if (producer.missedProducing) backgroundColor = 'rgba(255, 4, 4, 0.7)';*/
 
     let backgroundColorFixedCell = 'rgba(255, 255, 255, 0.7)';
 
@@ -260,17 +260,10 @@ export default class TableRow extends PureComponent {
       <Fragment>
         <Trow>
           {/* {#} {1.Name} */}
-          <NameCell backgroundColor={isTableScrolled ? backgroundColorFixedCell : backgroundColor}>
+          <NameCell backgroundColor={backgroundColor}>
             <NameBlock>
-              <LabelWrapper>
-                <label>
-                  <Checkbox type="checkbox" checked={isNodeChecked} onChange={this.toggleProducerSelection} />
-                  {isNodeChecked ? <StyledCheckboxActive /> : <StyledCheckbox />}
-                </label>
-              </LabelWrapper>
               <Index>{producer.index + 1}</Index>
               <NameWrapper>
-                <ImageBackup>{producer.logoCached && <BpImage src={producerImage} />}</ImageBackup>
                 <TextLink onClick={() => toggleModal('accountInfo', producer.name)}>{producer.name}</TextLink>
                 <ExternalLink link={producerUrl} />
                 {reregistered && <ReregisteredSpan>re-registered</ReregisteredSpan>}
@@ -415,21 +408,7 @@ export default class TableRow extends PureComponent {
               )}{' '}
             </Tdata>
           )}
-          <ArrowCell backgroundColor={backgroundColor} onClick={this.toggleArrowRotate}>
-            <DownArrow isArrowClicked={isArrowClicked} />
-          </ArrowCell>
         </Trow>
-        {isArrowClicked && (
-          <DetailsRow
-            colsNumber={colsNumber}
-            isPingUptated={isPingUptated}
-            producer={producer}
-            toggleModal={toggleModal}
-            producerUrl={producerUrl}
-            address={address}
-            p2pPort={p2pPort}
-          />
-        )}
       </Fragment>
     );
   }
