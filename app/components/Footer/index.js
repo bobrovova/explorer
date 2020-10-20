@@ -15,9 +15,7 @@ export default class Footer extends Component {
 
     return (
       <FooterWrapper>
-        <FooterSpan>
-          Copyright © 2019 Created by Method Inc.
-        </FooterSpan>
+        <FooterSpan>Copyright © 2019 Created by Method Inc.</FooterSpan>
       </FooterWrapper>
     );
   }

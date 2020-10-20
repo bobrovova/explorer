@@ -53,12 +53,12 @@ export const StyledCheckbox = styled.span`
   position: relative;
   width: 17px;
   height: 17px;
-  border: 2px solid #24265D;
+  border: 2px solid #24265d;
   cursor: pointer;
 `;
 
 export const StyledCheckboxActive = StyledCheckbox.extend`
-  background-color: #24265D;
+  background-color: #24265d;
 
   &:after {
     position: absolute;

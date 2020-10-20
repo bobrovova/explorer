@@ -52,9 +52,7 @@ export default class App extends PureComponent {
               breakpoints: ['320px', '768px', '1024px', '1200px'],
             }}
           >
-            <Wrapper
-              bgNum={actualBackgroundNumber}
-            >
+            <Wrapper bgNum={actualBackgroundNumber}>
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/easteregg" component={EasterEggPage} />

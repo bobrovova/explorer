@@ -143,8 +143,8 @@ export const HeadBox = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #24265D;
-  background-color: #24265D;
+  background-color: #24265d;
+  background-color: #24265d;
   font-weight: 700;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

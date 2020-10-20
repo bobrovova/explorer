@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // Table
 export const TableHead = styled.div`
-  background-color: #F7F9FC;
+  background-color: #f7f9fc;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const TableHead = styled.div`
 export const Tdata = styled.div`
   font-size: 12px;
   font-weight: 500;
-  color: #222B45;
+  color: #222b45;
   text-align: center;
   white-space: nowrap;
   flex: 1;

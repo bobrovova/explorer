@@ -39,7 +39,7 @@ export default class CurrentBlockInfo extends PureComponent {
                 <GreenSpan>{lastBlockStats.head_block_producer}</GreenSpan>
               </TextSpan>
               <TextSpan>
-              {t('i18nFirstSection.i18nCurrentBlockInfo.next')}
+                {t('i18nFirstSection.i18nCurrentBlockInfo.next')}
                 <GreenSpan>{lastBlockStats.next_producer}</GreenSpan>
               </TextSpan>
             </Fragment>

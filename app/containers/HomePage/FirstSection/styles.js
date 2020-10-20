@@ -40,7 +40,7 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #24265D;
+  background-color: #24265d;
   padding: 15px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -64,12 +64,12 @@ export const TextSpan = styled.div`
   font-size: 14px;
   color: rgba(24, 32, 78, 0.3);
   padding: 15px 0;
-  border-bottom: 1px solid #F6F6F6;
+  border-bottom: 1px solid #f6f6f6;
   justify-content: space-between;
 `;
 
 export const GreenSpan = styled.span`
-  color: #18204E;
+  color: #18204e;
   font-size: 14px;
 `;
 

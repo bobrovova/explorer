@@ -229,13 +229,13 @@ export default class TableRow extends PureComponent {
     const mostEndpointsAreDown =
       workingEndpointsNumber && producer.endpoints.length / 2 <= producer.endpoints.length - workingEndpointsNumber;
 
-    let backgroundColor = 'rgba(255, 255, 255, 0.7)';
-    /*if (producer.isCurrentNode) backgroundColor = 'rgba(17, 168, 39, 0.7)';
+    const backgroundColor = 'rgba(255, 255, 255, 0.7)';
+    /* if (producer.isCurrentNode) backgroundColor = 'rgba(17, 168, 39, 0.7)';
     if ((!producer.isNode && index < 61) || reregistered) backgroundColor = 'rgb(211, 211, 211)';
     if (mostEndpointsAreDown) backgroundColor = 'rgba(255, 255, 155, 0.7)';
     if (producer.isUnsynced) backgroundColor = 'rgb(159, 100, 227)';
     if (producer.responseIsBad) backgroundColor = 'rgba(238, 118, 0, 0.7)';
-    if (producer.missedProducing) backgroundColor = 'rgba(255, 4, 4, 0.7)';*/
+    if (producer.missedProducing) backgroundColor = 'rgba(255, 4, 4, 0.7)'; */
 
     let backgroundColorFixedCell = 'rgba(255, 255, 255, 0.7)';
 

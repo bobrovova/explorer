@@ -31,7 +31,7 @@ export const StyledLink = styled(Link)`
 
 export const FooterSpan = styled.span`
   text-align: center;
-  color: #18204E;
+  color: #18204e;
 `;
 
 export const RegularLink = styled.a`

@@ -40,7 +40,7 @@ export const Intumentary = styled.div`
 `;
 
 export const ButtonVote = styled.button`
-  background-color: #3366FF;
+  background-color: #3366ff;
   color: #fff;
   border-radius: 6px;
   height: 40px;
@@ -49,7 +49,7 @@ export const ButtonVote = styled.button`
   box-shadow: 0px 2px 5px 0.3px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   &:hover {
-    background-color: #1550FF;
+    background-color: #1550ff;
   }
 
   &:active {
