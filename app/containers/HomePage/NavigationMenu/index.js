@@ -87,16 +87,10 @@ export default class NavigationMenu extends PureComponent {
             {t('i18nNavigationMenu.liveTpsChart')}
           </BlueLink>
           <BlueLink href="#" target="__blank">
-            Testnet
-          </BlueLink>
-          <BlueLink href="#" target="__blank">
-            Инструкции
-          </BlueLink>
-          <BlueLink href="#" target="__blank">
             Explorer
           </BlueLink>
-          <BlueLink href="http://185.87.51.136/" target="__blank">
-            Method Web Wallet
+          <BlueLink href="https://junona.info/" target="__blank">
+            Junona Web Wallet
           </BlueLink>
         </NavMenu>
       </Container>
